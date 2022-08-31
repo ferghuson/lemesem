@@ -1,0 +1,45 @@
+.btn{
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    background: #2d3a4b;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; color: #252525; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+.bold{ font-weight: bold !important; }
+
+.btn:hover { background: #0b0c22; color: #fff; }
+.btn-inverse { background: #ffe115; color: #0b0c22; }
+.btn-inverse:hover { background: #0b0c22; color: #fff; }
+.form-control, .btn{ box-shadow: none !important; }
+.bg-light-dark { background-color: rgba(33, 37, 41, 0.12)!important; }
+.text-blue{ color: #0b0c22 !important; }
+.bg-blue{ background-color: #0b0c22 !important; }
+.text-yellow{ color: #ffe115 !important; }
+.bg-yellow{ background-color: #ffe115 !important; }
+
+.pt-10{ padding-top: 5rem !important; }
+.pb-10{ padding-bottom: 5rem !important; }
+.py-10{ padding-top: 5rem !important; padding-bottom: 5rem !important; }
+.ps-10{ padding-left: 5rem !important; }
+.pe-10{ padding-right: 5rem !important; }
+.px-10{ padding-left: 5rem !important; padding-right: 5rem !important; }
+.mt-10{ margin-top: 5rem !important; }
+.mb-10{ margin-bottom: 5rem !important; }
+.my-10{ margin-top: 5rem !important; margin-bottom: 5rem !important; }
+.ms-10{ margin-left: 5rem !important; }
+.me-10{ margin-right: 5rem !important; }
+.mx-10{ margin-left: 5rem !important; margin-right: 5rem !important; }

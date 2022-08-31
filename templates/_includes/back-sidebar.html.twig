@@ -1,0 +1,73 @@
+<!--start sidebar -->
+<aside class="sidebar-wrapper" data-simplebar="true">
+    <div class="sidebar-header">
+        <a href="{{ path('app_index') }}">
+            <img src="{{ asset('assets/images/favicon.png') }}" class="logo-icon" alt="logo icon">
+            <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid logo-text" alt="logo icon">
+        </a>
+        <div class="toggle-icon ms-auto">
+            <i class="fa-light fa-times"></i>
+        </div>
+    </div>
+    <!--navigation-->
+    <ul class="metismenu" id="menu">
+        <li>
+            <a href="{{ path('app_client_dashboard') }}">
+                <div class="parent-icon">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+                </div>
+                <div class="menu-title">Tableau de bord</div>
+            </a>
+        </li>
+        <li>
+            <a href="../client/transaction.php">
+                <div class="parent-icon">
+                    <i class="fa-light fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="menu-title">Nouvelle transaction</div>
+            </a>
+        </li>
+        <li>
+            <a href="../client/historique.php">
+                <div class="parent-icon">
+                    <i class="fa-light fa-clock-rotate-left"></i>
+                </div>
+                <div class="menu-title">Historique</div>
+            </a>
+        </li>
+        <li>
+            <a href="../client/verification.php">
+                <div class="parent-icon">
+                    <i class="fa-light fa-badge-check"></i>
+                </div>
+                <div class="menu-title">Vérification</div>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_client_profile') }}">
+                <div class="parent-icon">
+                    <i class="fa-light fa-user"></i>
+                </div>
+                <div class="menu-title">Profil</div>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_client_password') }}">
+                <div class="parent-icon">
+                    <i class="fa-light fa-key"></i>
+                </div>
+                <div class="menu-title">Mot de passe</div>
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_logout') }}">
+                <div class="parent-icon">
+                    <i class="fa-light fa-power-off"></i>
+                </div>
+                <div class="menu-title">Déconnexion</div>
+            </a>
+        </li>
+    </ul>
+    <!--end navigation-->
+</aside>
+<!--end sidebar -->

@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% set title = 'faq' %}
+
+{% block title %}Faq{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <section class="text-center">
+            <h3>Centre d'aide</h3>
+            <p>
+                Des questions ? N’hésitez pas à nous laisser vos coordonnées et nous vous recontactons dans les plus brefs délais.
+            </p>
+        </section>
+        <section class="row mb-5">
+            <div class="col-12 col-lg-6"><img src="{{ asset('assets/images/faq-illustration.svg') }}" alt="" class="img-fluid"> </div>
+            <div class="col-12 col-lg-6">
+                <div class="panel-group accordion" id="accordion">
+
+                    <!-- According 1 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed" aria-expanded="false">
+                                    Comment effectuer une transaction ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse in collapse show" style="">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>1. Se connecter  ou créer un compte (si vous êtes un nouveau utilisateur).</li>
+                                    <li>2. Ensuite faites vérifier vos informations (si c'est pas encore fait).</li>
+                                    <li>3. Vous pouvez commencer par échanger sur notre site.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- According 2 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false">
+                                    Pourquoi vous devez vérifier votre compte ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" style="">
+                            <div class="panel-body">
+                                Pour des raisons de sécurité et de fiabilité, la norme exige pour chaque entreprise exerçant dans le domaine financier
+                                de s'assurer de la fiabilité des informations personnelles fournit par chaque utilisateur.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- According 3 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">
+                                    Quels sont modes de paiements disponibles ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Pour le moment vous pouvez échanger sur notre site qu'avec les différents mode paiement ci-dessous :
+                                <br>
+                                Perfect Money, Moov Money (Togo, Benin, Burkina, Côte d'ivoire), T-money, carte de crédit (Visa, Mastercard).
+                                Mais d'ici peu, d'autre methode de paiement seront disponible.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- According 4 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="collapsed" aria-expanded="false">
+                                    Peut-on contacter le service client à n'importe quel moment ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapsefour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Nous sommes disponible 24h/24 et 7j/7 pour vous offrir un service client de qualité.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- According 5 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="collapsed" aria-expanded="false">
+                                    Combien coûte le dollar à l'achat et la vente sur notre site ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapsefive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Comme vous le savez bien déjà, le prix du dollar n'est pas constant. Ce qui fait que nos prix (à la vente ou l'achat) peuvent varier en fonction
+                                de l'évolution du dollar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- According 6 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapsesix" class="collapsed" aria-expanded="false">
+                                    Quel est le montant minimum pour effectuer une transaction sur notre site ?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapsesix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Sur notre plateformen, à la vente comme à l'achat, le minimum requis pour effectuer une transaction est de 2$.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

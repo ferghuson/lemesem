@@ -1,0 +1,112 @@
+<!--start top header-->
+<header class="top-header">
+    <nav class="navbar navbar-expand gap-3">
+        <div class="mobile-menu-button">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="d-inline-block d-lg-none ms-5">
+            <img src="{{ asset('assets/images/logo.png') }}" alt="" width="150px">
+        </div>
+
+        <div class="top-navbar-right ms-auto">
+
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item dropdown dropdown-large">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:void(0)" data-bs-toggle="dropdown">
+                        <div class="position-relative">
+                            <span class="notify-badge">1</span>
+                            <i class="bi bi-bell"></i>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <div class="msg-header">
+                            <p class="msg-header-title">Notifications</p>
+                        </div>
+                        <div class="header-notifications-list">
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <div class="notify">
+                                        <i class="bi bi-basket2"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+                            ago</span></h6>
+                                        <p class="msg-info">You have recived new orders</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown dropdown-user-setting">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:void(0)" data-bs-toggle="dropdown">
+                        <div class="user-setting">
+                            <img src="https://via.placeholder.com/110X110/212529/fff" class="user-img" alt="">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <div class="d-flex flex-row align-items-center gap-2">
+                                    <div class="">
+                                        <h6 class="mb-0 dropdown-user-name text-capitalize">{{ [app.user.lastname, app.user.firstname]|join(' ') }}</h6>
+                                        <small class="mb-0 dropdown-user-designation text-secondary">{{ app.user.email }}</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ path('app_client_profile') }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                    </div>
+                                    <div class="ms-3"><span>Profil</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0)">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <i class="fa-light fa-badge-check"></i>
+                                    </div>
+                                    <div class="ms-3"><span>Vérification</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ path('app_client_password') }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <i class="fa-light fa-key"></i>
+                                    </div>
+                                    <div class="ms-3"><span>Mot de passe</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ path('app_logout') }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <i class="fa-light fa-power-off"></i>
+                                    </div>
+                                    <div class="ms-3"><span>Déconnexion</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<!--end top header-->

@@ -1,0 +1,13 @@
+{% extends 'dashboard.html.twig' %}
+
+{% block title %}Title{% endblock %}
+
+{% block content %}
+    <section class="text-center">
+        <h3>Page title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, natus.</p>
+    </section>
+    <section>
+
+    </section>
+{% endblock %}

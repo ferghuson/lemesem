@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+{% set title = 'home' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <!-- HOME MAIN -->
+    <section class="simple-head" data-stellar-background-ratio="0.5" id="hme">
+        <!-- Particles -->
+        <div id="particles-js"></div>
+        <div class="position-center-center cont-left">
+            <div class="px-3 px-md-5">
+                <div class="row align-items-center">
+                    <!-- Left Section -->
+                    <div class="col-md-5">
+                        <h1>Bienvenue sur <br> Lemesem Exchange.</h1>
+                        <p>Votre plateforme pour l'achat et vente de <br> Perfect Money à un prix défiant toute concurrence.</p>
+                        <a href="" class="btn btn-inverse rounded-pill py-3">Commencez</a>
+                    </div>
+                    <!-- Right Section -->
+                    <div class="col-md-7 d-none d-md-block">
+                        <img src="{{ asset('assets/images/transaction.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content -->
+    <div class="container" id="content">
+        <!-- About Us -->
+        <section class="pt-10">
+            <div class="row mb-5 align-items-center text-center text-lg-start">
+                <div class="col-12 col-lg-6">
+                    <p class="text-dark mb-0">Echangez rapidement et facilement vos Perfect Money chez</p>
+                    <h4 class="mb-3">LEMESEM EXCHANGE</h4>
+                    <img class="d-lg-none mb-3 img-fluid" src="{{ asset('assets/images/calculating.svg') }}" alt="">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p class="text-dark"><span class="name"> Togbui Agossou &nbsp; - &nbsp;</span> <span>Ceo/Fondateur</span></p>
+                    <a href="#" class="btn btn-inverse text-uppercase rounded-pill">échanger maintenant</a>
+                </div>
+                <!-- Image -->
+                <div class="d-none d-lg-block col-12 col-lg-6 text-right"> <img src="{{ asset('assets/images/calculating.svg') }}" alt="Why Choose Us Image" > </div>
+            </div>
+            <!-- Features ROW -->
+            <div class="row text-center">
+                <!-- Services -->
+                <div class="col-md-4">
+                    <i class="fa-light fa-bolt-lightning fa-3x mb-2"></i>
+                    <h6>Transaction Rapide</h6>
+                    <p>Contrary to popular belief , Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+                <!-- Services -->
+                <div class="col-md-4">
+                    <i class="fa-light fa-globe fa-3x mb-2"></i>
+                    <h6>Payement sans frontière</h6>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem not simply random accusantium</p>
+                </div>
+                <!-- Services -->
+                <div class="col-md-4">
+                    <i class="fa-light fa-shield-check fa-3x mb-2"></i>
+                    <h6>Transaction Sécurisée</h6>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+            </div>
+        </section>
+        <!-- How It work -->
+        <section class="about py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h4 class="text-center text-lg-start">Comment ça marche ?</h4>
+                    <p>Ci-dessous les différentes étapes à suivre pour commencer à échanger sur notre plateforme :</p>
+                    <img class="d-lg-none mb-5" src="{{ asset('assets/images/hand-shaking.svg') }}" alt="">
+                    <div class="step text-start mb-5 mb-lg-3">
+                        <div class="row">
+                            <div class="col-2 text-end">
+                                <i class="fa-light fa-address-card fa-3x"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="ms-3 ms-md-0">Créez votre compte</h5>
+                                <p class="ms-3 ms-md-0">
+                                    Remplissez les différents champs du formulaire lors de l'inscription avec vos véritables informations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 text-end">
+                                <i class="fa-light fa-user-check fa-3x"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="ms-3 ms-md-0">Vérifiez votre identité</h5>
+                                <p class="ms-3 ms-md-0">
+                                    Complétez le processus de vérification d’identité pour sécuriser votre compte et vos transactions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 text-end">
+                                <i class="fa-light fa-arrow-right-arrow-left fa-3x"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="ms-3 ms-md-0">Commencez à échanger</h5>
+                                <p class="ms-3 ms-md-0">Commencez à acheter et à vendre vos perfect money sur Lemesem Exchange.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center text-lg-start">
+                        <a href="#" class="btn btn-inverse text-uppercase rounded-pill">s'inscrire maintenant</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="{{ asset('assets/images/hand-shaking.svg') }}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Support -->
+        <section class="py-5">
+            <div class="text-center margin-bottom-75">
+                <h4>Besoin d'aide ?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sed!</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 row p-3">
+                    <div class="col-3 col-lg-2 p-0 text-end"><img class="me-2 me-md-3 me-lg-4" src="{{ asset('assets/images/support.svg') }}" alt=""></div>
+                    <div class="col-9 col-lg-10 p-0">
+                        <h5 class="ms-3 ms-md-0">Support client</h5>
+                        <p class="ms-3 ms-md-0">
+                            Contactez le support client par tchat 24 heures sur 24, 7 jours sur 7. Nos agents du service clients sont là pour vous aider.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 row p-3">
+                    <div class="col-3 col-lg-2 p-0 text-end"><img class="me-2 me-md-3 me-lg-4" src="{{ asset('assets/images/faq.svg') }}" alt=""></div>
+                    <div class="col-9 col-lg-10 p-0">
+                        <h5 class="ms-3 ms-md-0">F.A.Q.</h5>
+                        <p class="ms-3 ms-md-0">
+                            Consultez la FAQ pour obtenir des informations détaillées sur nos différents services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimony -->
+        <section class="py-5 text-center">
+            <h4>Avis Client</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nibh dolor,
+                efficitur eget pharetra ac, cursus sed sapien. <br> Cras posuere ligula ut blandit varius.
+            </p>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>
+                        <i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                            Aliquam animi, distinctio est ipsam necessitatibus vitae. <br>
+                            Maecenas nibh dolor, efficitur eget pharetra ac, cursus sed sapien.
+                        </i>
+                    </p>
+                    <i class="fa-light fa-circle-user fa-2x mb-2"></i>
+                    <h6 class="text-black-50">Togbui Marshall</h6>
+                </div>
+            </div>
+        </section>
+        <!-- Payment Method -->
+        <section class="py-3 py-md-5">
+            <div class="row align-items-center text-center">
+                <div class="col"><img src="{{ asset('assets/images/logo-pm.png') }}" alt="" class="payment-logo img-fluid"></div>
+                <div class="col"><img src="{{ asset('assets/images/logo-moov-money.png') }}" alt="" class="payment-logo img-fluid"></div>
+                <div class="col"><img src="{{ asset('assets/images/logo-tmoney.png') }}" alt="" class="payment-logo img-fluid"></div>
+                <div class="col"><img src="{{ asset('assets/images/logo-visa.webp') }}" alt="" class="payment-logo img-fluid"></div>
+                <div class="col"><img src="{{ asset('assets/images/logo-mastercard.webp') }}" alt="" class="payment-logo img-fluid"></div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/js/particles.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+{% endblock %}

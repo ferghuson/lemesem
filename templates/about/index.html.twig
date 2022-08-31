@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% set title = 'about' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <section class="text-center mb-5">
+            <h3>Qui sommes-nous ?</h3>
+        </section>
+        <section class="row mb-5">
+            <div class="col-12 col-lg-6"><img src="{{ asset('assets/images/') }}" alt="" class="img-fluid"> </div>
+            <div class="col-12 col-lg-6">
+                <h4>Notre histoire</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alia quaedam dicent, credo, magna antiquorum esse peccata, quae ille veri investigandi cupidus nullo modo ferre potuerit. Quam ob rem tandem, inquit, non satisfacit? Quia, cum a Zenone, inquam, hoc magnifice tamquam ex oraculo editur: Virtus ad beate vivendum se ipsa contenta est, et Quare? Semovenda est igitur voluptas, non solum ut recta sequamini, sed etiam ut loqui deceat frugaliter. Duo Reges: constructio interrete. Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim. Nullis enim partitionibus, nullis definitionibus utuntur ipsique dicunt ea se modo probare, quibus natura tacita adsentiatur. Nam cum Academicis incerta luctatio est, qui nihil affirmant et quasi desperata cognitione certi id sequi volunt, quodcumque veri simile videatur. Quia, cum a Zenone, inquam, hoc magnifice tamquam ex oraculo editur: Virtus ad beate vivendum se ipsa contenta est, et Quare?
+                </p>
+            </div>
+        </section>
+        <section class="row mb-5">
+            <div class="col-12 col-lg-6">
+                <div class="mb-5">
+                    <h4>Nos objectifs</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolorem eveniet id, iusto magnam nostrum officiis quia reprehenderit tempora tempore.
+                    </p>
+                    <img src="" alt="" class="img-fluid d-lg-none">
+                </div>
+
+                <div class="row">
+                    <div class="col-12 row">
+                        <div class="col-3 col-lg-2 text-center text-lg-end"> <i class="fa-light fa-bullseye-arrow fa-3x me-2"></i> </div>
+                        <div class="col-9 col-lg-10">
+                            <h5>Objectif 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus error fuga inventore, recusandae tempore?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-3 col-lg-2 text-center text-lg-end"> <i class="fa-light fa-bullseye-arrow fa-3x me-2"></i> </div>
+                        <div class="col-9 col-lg-10">
+                            <h5>Objectif 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus deserunt, obcaecati provident saepe sint?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-3 col-lg-2 text-center text-lg-end"> <i class="fa-light fa-bullseye-arrow fa-3x me-2"></i> </div>
+                        <div class="col-9 col-lg-10">
+                            <h5>Objectif 3</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta impedit magnam placeat qui soluta tempore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-6">
+                <img src="{{ asset('assets/images/') }}" alt="">
+            </div>
+        </section>
+    </div>
+{% endblock %}

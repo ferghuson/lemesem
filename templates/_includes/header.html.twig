@@ -1,0 +1,45 @@
+<header class="sticky">
+    <div class="row pb-3 px-3 text-white">
+        <div class="col-12 col-md-6">
+            <span class="me-3"><i class="fa fa-up text-success"></i> Achat : 620F XOF</span>
+            <span><i class="fa fa-down text-danger"></i> Vente : 580F XOF</span>
+        </div>
+        <div class="d-none d-md-block col-md-6 d-flex align-items-center text-white text-end">
+            <span>Suivez-nous :</span>
+            <a href="#" class="text-white"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-whatsapp-square"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="logo"> <a href="{{ path('app_index') }}"><img class="img-responsive" src="{{ asset('assets/images/logo.png') }}" alt="Lemesem Exchange" ></a> </div>
+        <nav class="navbar navbar-expand-lg mobile_menu">
+            <!--    Navigation    -->
+            <div class="navgation">
+                <button class="navbar-toggler collapsed drawer-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto p-0">
+                        <li class="scroll {% if title == 'home' %}active{% endif %}"><a href="{{ path('app_home') }}">Accueil</a></li>
+                        <li class="scroll {% if title == 'about' %}active{% endif %}"> <a href="{{ path('app_about') }}">A propos </a> </li>
+                        <li class="scroll {% if title == 'faq' %}active{% endif %}"> <a href="{{ path('app_faq') }}">Faq</a></li>
+                        <li class="scroll {% if title == 'contact' %}active{% endif %}"> <a href="{{ path('app_contact') }}">Contact</a></li>
+                    </ul>
+                    <div class="text-start text-lg-end">
+                        {% if app.user  %}
+                            <a href="{{ path('app_logout') }}" class="btn rounded-pill mb-3 mb-md-0">Déconnexion</a>
+                            <a href="{{ path('app_client_dashboard') }}" class="btn btn-inverse rounded-pill">Tableau de bord</a>
+                        {% else  %}
+                            <a href="{{ path('app_login') }}" class="btn rounded-pill mb-3 mb-md-0">CONNEXION</a>
+                            <a href="{{ path('app_register') }}" class="btn btn-inverse rounded-pill">S'INSCRIRE</a>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="clearfix"></div>
+</header>

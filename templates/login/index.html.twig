@@ -1,0 +1,51 @@
+{% extends 'user.html.twig' %}
+
+{% set title = 'login' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="row pt-5 text-white">
+        <div class="col-12 col-md-7 offset-md-3 col-lg-6 offset-lg-3 px-3">
+            <div class="card bg-blue py-3">
+                <div class="card-header text-center">
+                    <img src="{{ asset('assets/images/logo.png') }}" alt="Lemesem Exchange" class="img-fluid mb-3" width="150px">
+                    <h4 class="text-white">Connexion</h4>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="">
+                        </div>
+                        <div class="mb-4">
+                            <span class="form-label">Mot de passe</span>
+                            <div class="input-group" id="display_pwd">
+                                <input type="password" class="form-control form-control-lg border-end-0" placeholder="" aria-label="Mot de passe" aria-describedby="basic-addon2">
+                                <a href="" class="input-group-text bg-white border-start-0">
+                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <a href="reset-password.php" class="small text-yellow">Mot de passe oublié ?</a>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-inverse mb-3">SE CONNECTER</button>
+                            <br>
+                            <a href="registration.php" class="small text-yellow"><u>Créer un compte</u></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
